@@ -12,19 +12,46 @@
 
 ---
 
-## 1. Agent 管理技巧
+## 1. 开发演进趋势
 
-### 软件任务步骤
+### 开发演进阶段
+
+| 阶段 | 描述 |
+|------|------|
+| 1 | 单个开发者管理单个开发者的输出 |
+| 2 | 领导者管理多个开发者的输出 |
+| 3 | 领导者管理多个开发者的输出（AI 系统辅助） |
+| 4 | 单个开发者管理多个 AI agents 的工作 |
+
+### 软件团队历史
+
+| 年份 | 里程碑 |
+|------|--------|
+| 1940 | 独立开发者处理完整项目 |
+| 1960 | 软件团队开始出现（NASA、DoD 项目需求） |
+| 1970 | 软件团队主流采用，专业化出现 |
+| 1990 | 团队与开发者使用 AI 编码系统辅助 |
+| 2023 | 开发者管理 diverse agents 组 |
+| 2025 | 开发者 assisted by AI coding systems |
+| 2030 | 未来展望 |
+
+---
+
+## 2. 软件任务步骤
 
 ```
-1. 提供高级需求
-2. 将需求转化为设计文档
-3. 从文档实现解决方案
-4. 添加测试
-5. 确保 CI 通过
-6. Code Review
-7. 更新文档
+1. 提供高级需求 🟩
+2. 将需求转化为设计文档 🟩/🟦
+3. 从文档实现解决方案 🟦
+4. 添加测试 🟦
+5. 确保 CI 通过 🟦
+6. Code Review 🟦
+7. 更新文档 🟦
 ```
+
+---
+
+## 3. Agent 管理技巧
 
 ### 四种技术
 
@@ -46,17 +73,34 @@
 #### Subagents（子代理）
 > 运行时委托，创建独立开发者角色
 
+**用途**:
 - 为不同类型工作创建不同开发者角色（前端、后端等）
 - 清晰分离不同工作流的上下文
 - 自定义系统提示、工具和独立上下文窗口
 - 走向 agents 管理 agents
 
+**使用场景参考**:
+- https://github.com/vijaythecoder/awesome-claude-agents
+- https://github.com/SuperClaude-Org/SuperClaude_Framework
+
 #### Agent Behavior Files
 - `CLAUDE.md` / `cursorrules` / `AGENTS.md`
 
+### 最佳实践
+
+1. **需要谨慎的保障措施**
+2. **每个 agent 的可审计性**
+   - 代码库中的测试
+   - CI/CD 最佳实践
+   - 标记每个 agent 制作的 diff
+3. **不同任务使用不同模型**
+   - 更复杂的任务可能需要更多前期指导
+   - 完全异步的任务可能需要更少指导
+4. **定期 checkpoint（提交）**
+
 ---
 
-## 2. Claude Code 深度使用
+## 4. Claude Code 深度使用
 
 ### 安装
 ```bash
@@ -66,8 +110,20 @@ npm install -g @anthropic-ai/claude-code
 ### 核心使用场景
 
 1. **Codebase Q&A + Research** - 查看代码结构、理解代码逻辑
+```
+> how do I make a new @app/services/ValidationTemplateFactory?
+> why does recoverFromException take so many arguments? look through git history to answer
+> why did we fix issue #18363 by adding the if/else in @src/login.ts api?
+> in which version did we release the new @api/ext/PreHooks.php api?
+> look at PR #9383, then carefully verify which app versions were impacted
+> what did I ship last week?
+```
+
 2. **Write Code** - 1-shot（单次）、Sidekick（助手）、Prototype（原型）
 3. **Integrate Tools & MCPs** - 集成外部工具
+```bash
+$ claude mcp add barley_server -- node myserver
+```
 4. **Power Automation** - 自动化任务
 
 ### 工作流适配任务
@@ -76,19 +132,13 @@ npm install -g @anthropic-ai/claude-code
 |----------|--------|
 | 探索/计划 | explore → plan → confirm → code → commit |
 | 测试驱动 | tests → commit → code → iterate → commit |
-| 原型迭代 | code → screenshot → iterate |
-
-### 关键教训
-
-1. **Build for the model six months from now** - 为六个月后的模型构建
-2. **Be ready to evolve** - 准备好演进
-3. **Ask not what the model can do for you** - 不要问模型能为你做什么
+| 原型迭代 | code → screenshot → iterate → code... |
 
 ---
 
-## 3. Anthropic 内部实践案例
+## 5. Anthropic 内部实践案例
 
-> 基于 **How Anthropic Teams Use Claude Code** 阅读材料
+> 基于 **How Anthropic Uses Claude Code** 阅读材料
 
 ### 各团队 Claude Code 应用场景
 
@@ -110,9 +160,31 @@ npm install -g @anthropic-ai/claude-code
 4. **增量开发** - 一次实现一个步骤
 5. **会话末文档** - 总结完成的工作，改进工作流
 
+### Claude Code SDK
+
+```bash
+# 使用 SDK
+$ claude -p   "what did i do this week?"   --allowedTools Bash(git log:*)   --output-format stream-json
+
+# 管道使用
+$ get-gcp-logs 1uhd832d |
+  claude -p "correlate errors + commits"   --output-format=json |
+  jq '.result'
+```
+
 ---
 
-## 4. 实践练习
+## 6. 关键教训
+
+1. **Build for the model six months from now** - 为六个月后的模型构建
+2. **Be ready to evolve** - 准备好演进
+3. **Ask not what the model can do for you** - 不要问模型能为你做什么，要问你能为模型做什么
+4. 编程语言生产力正以指数级增长（AI 驱动）
+5. IDE 生产力也呈类似指数级增长
+
+---
+
+## 7. 实践练习
 
 ### 练习 1: 配置 CLAUDE.md
 创建项目的 CLAUDE.md，包含：
@@ -138,10 +210,12 @@ claude mcp add barley_server -- node myserver
 
 ### Lecture 7: How to be an Agent Manager
 - [Slides (PDF)](../slides/week4-lecture1-agent-manager.pdf)
-- **Guest Speaker**: Boris Cherny, Anthropic
+- **Guest Speaker**: Boris Cherny, Anthropic（Claude Code 创始人）
+- **日期**: 10/17/25
 
 ### Lecture 8: Welcome to Claude Code
 - [Slides (PDF)](../slides/week4-lecture2-claude-code.pdf)
+- **核心**: Claude Code 架构、使用场景、最佳实践
 
 ---
 
@@ -167,4 +241,3 @@ Day 5 将探讨现代终端工具，学习 AI 开发产品的设计原则。
 
 ---
 
-*学习时间建议: 10-12 小时*

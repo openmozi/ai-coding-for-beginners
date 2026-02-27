@@ -1,12 +1,12 @@
-# Chapter 2: The Anatomy of Coding Agents
+# Chapter 2: Coding Agent Architecture
 
 ## Course Overview
 
-Agent is the core capability of AI programming. Understanding underlying principles helps use tools better.
+Agents are the core capability of AI programming. Understanding the underlying principles helps you use tools better.
 
 ### Learning Objectives
-- Understand Agent architecture core components
-- Master tool use and function calling
+- Understand core components of Agent architecture
+- Master tool use and function calling mechanisms
 - Learn MCP (Model Context Protocol)
 - Build a simple Coding Agent from scratch
 
@@ -18,26 +18,34 @@ Agent is the core capability of AI programming. Understanding underlying princip
 Agent = LLM + Tools + Loop
 ```
 
-- **LLM** handles reasoning and decision making
-- **Tools** enable Agent to interact with the world
-- **Loop** allows Agent to continue working until task completion
+- **LLM** is responsible for reasoning and decision-making
+- **Tools** allow agents to interact with the world
+- **Loop** enables the agent to continue working until the task is complete
 
-### Agent Architecture Steps
+### Agent Architecture Core Steps
 
 ```
 1. Read user input → append to conversation
 2. Tell LLM available tools (Read_file, List_dir, Edit_file, Create_file)
 3. LLM requests tool use at appropriate time
-4. Execute tool locally and return results
-5. Continue until task is complete
+4. Execute tool locally and return result
+5. Continue conversation until task is complete
 ```
 
-### Claude's Secrets
+### Terminology
 
-1. **Front-load context** - Use small, targeted prompts
-2. **System-reminder tags** - Prevent behavior drift
-3. **Command prefix extraction** - Clearly extract commands
-4. **Subagents** - Prevent context overload
+| Term | Description |
+|------|-------------|
+| **System Prompt** | Defines overall LLM behavior and some directives |
+| **User Prompt** | User's custom requests |
+| **Assistant Prompt** | LLM's response |
+
+### Claude's Secret Sauce
+
+1. **Front-load context** - Use tiny targeted prompts to preload context
+2. **System-reminder tags** - Use <system-reminder> everywhere to prevent drift
+3. **Command prefix extraction** - Clearly extract user commands
+4. **Subagents** - Spawn subagents to help prevent context overloading
 
 ---
 
@@ -48,29 +56,46 @@ Agent = LLM + Tools + Loop
 ```json
 {
   "name": "get_weather",
-  "description": "Get weather information",
+  "description": "Get weather information for specified city",
   "parameters": {
     "type": "object",
-    "properties": { "city": { "type": "string" } },
+    "properties": {
+      "city": { "type": "string", "description": "City name" }
+    },
     "required": ["city"]
   }
 }
 ```
 
+### Common Tools
+- **Read_file** - Read file content
+- **List_dir** - List directory contents
+- **Edit_file** - Edit files
+- **Create_file** - Create new files
+
 ### Workflow
 
-1. Define tool name, description, parameter schema
-2. LLM decides when to call tools
-3. Execute tool and return results
-4. LLM continues or requests more tools
+1. Define tool name, description, and parameter schema
+2. LLM decides when to call tools based on user request
+3. Execute tool and return result to LLM
+4. LLM continues generating responses or requesting more tools
 
 ---
 
 ## 3. MCP (Model Context Protocol)
 
 ### Why MCP?
-- LLMs have vast but static world knowledge
-- Building autonomous systems needs robust dynamic data input
+
+- LLMs have vast but static world knowledge that only updates when retrained
+- Building fully autonomous systems requires robust ways to feed dynamic data
+
+**Dynamic Data Examples**:
+- What's the weather today?
+- Who is the president?
+- What's the price of Bitcoin?
+- Who is the narrator in Nike's latest ad campaign?
+
+RAG and tool-calling are the best answers we have today.
 
 ### MCP Definition
 
@@ -80,40 +105,61 @@ Agent = LLM + Tools + Loop
 
 | Benefit | Description |
 |---------|-------------|
-| **Standardization** | Unified tool description format |
+| **Standardization** | Unified tool description format using JSON-RPC |
 | **Extensibility** | MCP Server can wrap any tool |
 | **Reduced Integration** | M x N → M + N |
+| **Inherited from LSP** | Extends from Language Server Protocols |
+| **Proactive Workflows** | Supports proactive agentic workflows, not just reactive responses |
 
 ### MCP Architecture
 
 | Component | Description |
 |-----------|-------------|
-| **Host** | Cursor, Claude Desktop, etc. |
-| **MCP Client** | Library embedded in Host |
-| **MCP Server** | Lightweight wrapper for tools |
-| **Tool** | Callable function |
+| **Host** | AI IDEs like Cursor, Claude Desktop |
+| **MCP Client** | Library embedded in Host (stateful session per server) |
+| **MCP Server** | Lightweight wrapper in front of a tool |
+| **Tool** | Callable function (could be data source, API) |
+
+### MCP Communication Flow
+
+```
+1. Client calls tools/list to get server capabilities
+2. Server returns JSON describing each tool (name, summary, JSON schema)
+3. Host injects tool description into model context
+4. User prompt triggers model, emitting structured tool call
+5. MCP Server executes tool, conversation resumes
+
+MCP provides stdio and SSE transport layer
+```
 
 ### MCP Limitations
 
-- Agents don't handle many tools well
-- APIs consume context quickly
-- Design APIs with AI in mind
+- **Limited tool handling**: Agents don't handle many tools well
+- **Context window consumption**: APIs eat up context window quickly
+- **AI-native design**: Design APIs with AI usage in mind
 
 ---
 
 ## 4. Practice Exercises
 
 ### Exercise 1: Understand Agent Loop
-Observe in Claude or Cursor how Agent:
-1. Receives user request
+Observe how Agent in Claude or Cursor:
+1. Receives user requests
 2. Decides which tools to use
 3. Executes tools and processes results
-4. Continues until task completion
+4. Continues until task is complete
 
 ### Exercise 2: Explore MCP
 1. View available MCPs in Cursor or Claude Desktop
 2. Try adding a new MCP Server
 3. Observe how tools are described to LLM
+
+### Exercise 3: Build Simple Agent
+Try building a simple Coding Agent from scratch:
+1. Set up LLM API
+2. Define available tools
+3. Implement agent loop
+4. Test basic functionality
 
 ---
 
@@ -138,12 +184,13 @@ Observe in Claude or Cursor how Agent:
 
 **[Day 2 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week2)**
 
+Complete development tasks in AI IDE.
+
 ---
 
 ## Tomorrow's Preview
 
-Day 3 will explore AI IDE, learning context management and code understanding best practices.
+Day 3 will dive into AI IDE, learning context management and code understanding best practices.
 
 ---
 
-*Learning Time: 10-12 hours*

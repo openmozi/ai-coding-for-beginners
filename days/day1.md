@@ -29,7 +29,26 @@ AI 编程是未来软件工程师的核心技能。不会 AI 的工程师将被�
 
 ---
 
-## 2. LLM 训练过程
+## 2. LLM 基础概念
+
+### 什么是 LLM？
+LLM（Large Language Models，大语言模型）是用于下一个 token 预测的**自回归模型**（autoregressive models）。
+
+```
+输入文本 → Tokenize → Embedding → Transformer 层（12-96+）→ 输出预测
+```
+
+#### Transformer 层
+- 使用自注意力机制（Self-attention mechanism，参考 Viswani et al.）
+- 12-96+ 层 Transformer
+- 将 tokens 转换为固定维度的数值向量（~1-3K 维度）
+
+#### Embedding
+将文本 tokens 转换为固定维度的数值向量。
+
+---
+
+## 3. LLM 训练过程
 
 ### 三个训练阶段
 
@@ -39,35 +58,36 @@ AI 编程是未来软件工程师的核心技能。不会 AI 的工程师将被�
 | Stage 2 | Supervised Finetuning | 10K - 100K pairs | 遵循指令 |
 | Stage 3 | Preferencing Tuning | 10K - 100K comparisons | 对齐人类偏好 |
 
-#### Stage 1: 预训练 (Pretraining)
-```
-文本输入 → Tokenize → Embedding → 模型处理 → 输出
-```
+### Stage 1: 预训练 (Pretraining)
 - 使用海量公开数据（Common Crawl, Wikipedia, StackExchange、GitHub）
 - 学习语言的基本概念和模式
+- **示例**: "Write a for loop" → "that could be used in a piece of code"
 
-#### Stage 2: 监督微调 (SFT)
+### Stage 2: 监督微调 (SFT)
 - 使用高质量的指令-响应对
 - 教模型遵循人类指令
+- **示例**: "what is the capital of Croatia" → "Zagreb is the capital"
 
-#### Stage 3: 偏好调优 (Preferencing)
+### Stage 3: 偏好调优 (Preferencing)
 - 收集同一提示的多个输出对
 - 训练奖励模型预测偏好输出
 - 对齐人类偏好（有用性、正确性、可读性）
+- **示例**: "Write a for loop" → "for idx in range(10):"
 
-### Reasoning Models（推理模型）
+#### Reasoning Models（推理模型）
 - 添加 chain-of-thought 推理 traces
 - 集成工具使用能力
 - 通过强化学习学习评估推理过程
+- 学习回溯等推理步骤
 
-### 模型规模参考
+#### 模型规模参考
 - GPT-3 / Claude 3.5 Sonnet: ~175B 参数
 - LLaMA 3.1: 405B 参数
 - GPT-4: ~1.8T 参数
 
 ---
 
-## 3. LLM 的能力与局限
+## 4. LLM 的能力与局限
 
 ### 优势
 - **Expert-level code completion** - 专家级代码补全
@@ -77,56 +97,80 @@ AI 编程是未来软件工程师的核心技能。不会 AI 的工程师将被�
 ### 局限性
 | 局限性 | 描述 | 应对方案 |
 |--------|------|----------|
-| Hallucinations | 幻觉（生成不存在的 API） | 上下文工程 |
-| Context window limits | 上下文窗口限制（~100-200K tokens） | 精选上下文 |
+| Hallucinations | 幻觉（生成不存在的/过时的 API） | 健壮的上下文工程 |
+| Context window limits | 上下文窗口限制（~100-200K tokens，但并非所有都同等有效） | 精选上下文 |
 | Latency | 延迟（每秒到每分钟不等） | 根据任务规划 |
 | Cost | 成本（输入 $1-3/百万 tokens，输出 $10+/百万） | 优化提示长度 |
 
 ---
 
-## 4. 提示工程技巧
+## 5. 提示工程技巧
+
+### 提示工程背景
+提示既是艺术也是科学。LLM 的黑箱特性意味着有一些"LLM 低语"的技巧...但有已建立的技术经验性地提高了 LLM 性能。
 
 ### Zero-shot Prompting
 直接让 LLM 执行任务，无需示例。
 
+**示例**: Write me a Rust for-loop that iterates over a list of strings for every, printing every value in an even index
+
 ### K-shot Prompting
-提供 k 个示例（1, 3, 5 个），也称为"上下文学习"，适合需要特定格式的任务。
+提供 k 个示例（1, 3, 5 个），也称为"上下文学习"（in-context learning），适合需要特定格式的任务。
+
+**示例**:
+```
+Write a for-loop iterating over a list of strings using the naming convention in our repo. Here are some examples of how we typically format variable names.
+
+<example>var StRaRrAy = ['cat', 'dog', 'wombat']</example>
+<example>def func CaPiTaLiZeStR = () => {}</example>
+```
 
 ### Chain-of-Thought (CoT)
 - **Multi-shot CoT**: 展示推理步骤示例
-- **Zero-shot CoT**: 添加"Let's think step-by-step"
+- **Zero-shot CoT**: 添加"Let's think step-by-step"或提示在显式 <reasoning> 标签中推理
 - 适合多步逻辑任务（编程、数学）
 
 ### Role Prompting
-指定模型角色，增强输出质量：
+指定模型角色，增强输出质量。
+
+**角色提示示例**:
 ```
-You are a helpful assistant that loves programming at the level
-of a senior software developer.
+You are a helpful assistant that loves programming at the level of a senior software developer and is very detailed and pedantic in your answers.
+```
+```
+You are a Gen Z digital bestie. Always sound like you're texting on Snapchat at 2am.
 ```
 
 ### System Prompt vs User Prompt
 
 | 类型 | 描述 |
 |------|------|
-| **System Prompt** | 第一条消息，定义 LLM 整体行为和规则 |
+| **System Prompt** | 第一条消息，定义 LLM 整体行为和规则（通常最终用户看不到） |
 | **User Prompt** | 用户的实际请求和指令 |
 | **Assistant** | LLM 实际生成的响应 |
 
 ### 最佳实践
-1. **结构化提示**：
+
+#### 提示改进
+- 使用 [Claude Prompt Improver](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prompt-improver)
+- 给一个几乎不了解上下文的人看提示，如果他们困惑，LLM 也会困惑
+
+#### 结构化提示
 ```
 Here are the logs:
-<log>LOG MESSAGE</log>
-and the stack trace:
+<log>LOG MESSAGE</log> and the stack trace:
 <error>STACK TRACE</error>
 ```
-2. **明确具体**：指定语言、技术栈、库、约束条件
-3. **分解任务**：复杂任务拆分成简单步骤
-4. **提示迭代**：使用 Claude Prompt Improver 优化
+
+#### 明确具体
+- 指定语言、技术栈、库、约束条件
+
+#### 分解任务
+- 复杂任务拆分成简单步骤
 
 ---
 
-## 5. 实践练习
+## 6. 实践练习
 
 ### 练习 1: 尝试不同提示技巧
 使用 Claude 或其他 LLM 尝试：
@@ -138,13 +182,17 @@ and the stack trace:
 尝试不同角色提示，比较输出质量：
 - "You are a junior developer..."
 - "You are a senior software architect..."
+- "You are a Gen Z digital bestie..."
 
 ### 练习 3: 结构化提示
 提供日志和错误信息，观察 LLM 如何解析和响应。
 
+### 练习 4: 使用 Prompt Improver
+使用 Claude Prompt Improver 优化你的提示，观察改进效果。
+
 ---
 
-## 6. 课程学习路径
+## 7. 课程学习路径
 
 | 天数 | 主题 |
 |------|------|
@@ -201,6 +249,9 @@ and the stack trace:
 | **Temperature** | 控制输出随机性的参数 |
 | **Embedding** | 将 tokens 转换为固定维度的数值向量 |
 | **Human-agent Engineering** | 人类工程师作为 AI 的管理者和决策者 |
+| **Autoregressive Models** | 自回归模型，用于下一个 token 预测 |
+| **Self-attention** | 自注意力机制 |
+| **In-context Learning** | 上下文学习，即 K-shot Prompting |
 
 ---
 
@@ -210,4 +261,3 @@ Day 2 将深入探讨编程智能体（Coding Agents）的架构，学习如何�
 
 ---
 
-*学习时间建议: 8-10 小时*
