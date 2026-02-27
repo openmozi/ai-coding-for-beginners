@@ -1,8 +1,18 @@
-# AI Programming Tutorial
+# Modern AI Software Development Tutorial
 
 > Based on Stanford University CS146S: The Modern Software Developer
 
 **[中文版](README.md)** | [Learning Checklist](CHECKLIST_EN.md) | [Resources](resources/README.md)
+
+---
+
+## Course Introduction
+
+In the last few years, large language models have introduced a revolutionary new paradigm in software development. The traditional software development lifecycle is being transformed by AI automation at every stage, raising the question: how should the next generation of software engineers work?
+
+This course demonstrates how modern AI tools are transforming software development—democratizing app building while complex applications still require engineer judgment. Students will master both the theory behind traditional software engineering challenges and the cutting-edge AI-powered tools solving them today.
+
+> **Important**: This is **NOT a "vibe coding" course**. You cannot blindly trust AI output. **Human-agent engineering** is the core—human engineers serve as AI managers and decision makers, needing to read and review lots of code, understanding what excellent software looks like.
 
 ---
 

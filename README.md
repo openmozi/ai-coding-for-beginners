@@ -1,8 +1,18 @@
-# AI 编程入门教程
+# 现代 AI 软件开发教程
 
 > 基于 Stanford University CS146S: The Modern Software Developer
 
 **[English Version](README_EN.md)** | [学习检查清单](CHECKLIST.md) | [资源汇总](resources/README.md)
+
+---
+
+## 课程简介
+
+近年来，大语言模型为软件开发引入了革命性的新范式。传统的软件开发生命周期正在各个阶段被 AI 自动化所改变，这引发了一个问题：下一代软件工程师应该如何工作？
+
+本课程将展示现代 AI 工具如何改变软件开发——它降低了应用开发的门槛，但复杂应用仍需要工程师的判断。学生将掌握传统软件工程挑战背后的理论，以及当今解决这些问题的前沿 AI 工具。
+
+> **重要**：这**不是一门 "vibe coding" 课程**。你不能盲目相信 AI 的输出。**Human-agent engineering** 才是核心——人类工程师作为 AI 的管理者和决策者，需要阅读和审查大量代码，理解什么是优秀的软件。
 
 ---
 
