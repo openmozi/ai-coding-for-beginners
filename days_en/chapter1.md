@@ -241,16 +241,16 @@ Use Claude Prompt Improver to optimize your prompts and observe improvements.
 
 | Day | Topic |
 |-----|-------|
-| Day 1 | LLM Basics + Prompt Engineering |
-| Day 2 | Coding Agent + MCP |
-| Day 3 | AI IDE + Sync/Async |
-| Day 4 | Agent Management + Claude Code |
-| Day 5 | AI Developer Product Design |
-| Day 6 | Testing + Security |
-| Day 7 | Code Review |
-| Day 8 | AI App Building |
-| Day 9 | AI DevOps |
-| Day 10 | Future Outlook |
+| Chapter 1 | LLM Basics + Prompt Engineering |
+| Chapter 2 | Coding Agent + MCP |
+| Chapter 3 | AI IDE + Sync/Async |
+| Chapter 4 | Agent Management + Claude Code |
+| Chapter 5 | AI Developer Product Design |
+| Chapter 6 | Testing + Security |
+| Chapter 7 | Code Review |
+| Chapter 8 | AI App Building |
+| Chapter 9 | AI DevOps |
+| Chapter 10 | Future Outlook |
 
 ---
 
@@ -280,7 +280,7 @@ Use Claude Prompt Improver to optimize your prompts and observe improvements.
 ## Assignment
 
 ### LLM Prompting Playground
-**[Day 1 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week1)**
+**[Chapter 1 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week1)**
 
 Master LLM prompting techniques through practice.
 
@@ -301,9 +301,8 @@ Master LLM prompting techniques through practice.
 
 ---
 
-## Tomorrow's Preview
+## Next Chapter
 
-Day 2 will dive into Coding Agents architecture, learning how to build your own coding agents.
+[Next Chapter: Chapter 2](./chapter2.md)
 
 ---
-

@@ -158,9 +158,8 @@ Learn to write secure AI code and implement security testing.
 
 ---
 
-## Tomorrow's Preview
+## Next Chapter
 
-Day 7 will discuss modern software support, learning AI Code Review practices.
+[Next Chapter: Chapter 7](./chapter7.md)
 
 ---
-

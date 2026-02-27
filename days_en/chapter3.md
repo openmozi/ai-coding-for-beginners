@@ -189,15 +189,14 @@ Create a CLAUDE.md file containing:
 
 ## Assignment
 
-**[Day 3 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week3)**
+**[Chapter 3 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week3)**
 
 Familiarize with AI IDE environment and master best practices.
 
 ---
 
-## Tomorrow's Preview
+## Next Chapter
 
-Day 4 will dive into Agent management techniques, learning how to efficiently manage multiple AI agents.
+[Next Chapter: Chapter 4](./chapter4.md)
 
 ---
-

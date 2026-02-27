@@ -229,15 +229,14 @@ claude mcp add barley_server -- node myserver
 
 ## Assignment
 
-**[Day 4 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week4)**
+**[Chapter 4 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week4)**
 
 Practice Agent management techniques and create custom workflows.
 
 ---
 
-## Tomorrow's Preview
+## Next Chapter
 
-Day 5 will discuss modern terminal tools and learn AI developer product design principles.
+[Next Chapter: Chapter 5](./chapter5.md)
 
 ---
-

@@ -152,9 +152,8 @@ Practice Code Review and develop code review skills.
 
 ---
 
-## Tomorrow's Preview
+## Next Chapter
 
-Day 8 will discuss automated UI and app building, learning how AI is changing frontend development.
+[Next Chapter: Chapter 8](./chapter8.md)
 
 ---
-

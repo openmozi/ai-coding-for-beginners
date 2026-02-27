@@ -152,9 +152,8 @@ Code Review 是最高杠杆的活动。AI Code Review 比以往任何时候都�
 
 ---
 
-## 明天预告
+## 下一章
 
-Day 8 将探讨自动化 UI 和应用构建，学习 AI 如何改变前端开发。
+[下一章：Chapter 8](./chapter8.md)
 
 ---
-

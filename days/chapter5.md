@@ -165,15 +165,14 @@ Agent 工作流
 
 ## 作业
 
-**[Day 5 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week5)**
+**[Chapter 5 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week5)**
 
 探索现代 AI 开发工具，比较不同产品的设计理念。
 
 ---
 
-## 明天预告
+## 下一章
 
-Day 6 将深入探讨 AI 测试与安全，学习 SAST、DAST 等安全测试方法。
+[下一章：Chapter 6](./chapter6.md)
 
 ---
-

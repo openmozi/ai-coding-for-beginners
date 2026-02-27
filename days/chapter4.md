@@ -229,15 +229,14 @@ claude mcp add barley_server -- node myserver
 
 ## 作业
 
-**[Day 4 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week4)**
+**[Chapter 4 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week4)**
 
 实践 Agent 管理技巧，创建自定义工作流。
 
 ---
 
-## 明天预告
+## 下一章
 
-Day 5 将探讨现代终端工具，学习 AI 开发产品的设计原则。
+[下一章：Chapter 5](./chapter5.md)
 
 ---
-

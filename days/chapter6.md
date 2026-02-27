@@ -158,9 +158,8 @@
 
 ---
 
-## 明天预告
+## 下一章
 
-Day 7 将探讨现代软件支持，学习 AI Code Review 的实践。
+[下一章：Chapter 7](./chapter7.md)
 
 ---
-

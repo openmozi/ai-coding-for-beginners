@@ -20,16 +20,16 @@
 
 | 章节 | 主题 | 学习资料 | 幻灯片 |
 |------|------|----------|--------|
-| [第 1 章](days/day1.md) | 编程 LLM 和 AI 开发入门 | [资料](days/day1.md) | [Lecture 1](/slides/week1-lecture1-introduction.pdf) / [Lecture 2](/slides/week1-lecture2-power-prompting.pdf) |
-| [第 2 章](days/day2.md) | 编程智能体的架构 | [资料](days/day2.md) | [Lecture 1](/slides/week2-lecture1-coding-agent-scratch.pdf) / [Lecture 2](/slides/week2-lecture2-mcp-server.pdf) |
-| [第 3 章](days/day3.md) | AI 集成开发环境 | [资料](days/day3.md) | [Lecture 1](/slides/week3-lecture1-ide-setup.pdf) / [Lecture 2](/slides/week3-lecture2-cognition.pdf) |
-| [第 4 章](days/day4.md) | 编程智能体模式 | [资料](days/day4.md) | [Lecture 1](/slides/week4-lecture1-agent-manager.pdf) / [Lecture 2](/slides/week4-lecture2-claude-code.pdf) |
-| [第 5 章](days/day5.md) | 现代终端 | [资料](days/day5.md) | [PDF](/slides/week5-lecture1-ai-developer-product.pdf) |
-| [第 6 章](days/day6.md) | AI 测试与安全 | [资料](days/day6.md) | [PDF](/slides/week6-lecture1-ai-qa-sast-dast.pdf) |
-| [第 7 章](days/day7.md) | 现代软件支持 | [资料](days/day7.md) | [PDF](/slides/week7-lecture1-code-review.pdf) |
-| [第 8 章](days/day8.md) | 自动化 UI 和应用构建 | [资料](days/day8.md) | [Lecture 1](/slides/week8-lecture1-end-to-end-apps.pdf) / [Lecture 2](/slides/week8-lecture2-vercel.pdf) |
-| [第 9 章](days/day9.md) | Agent 部署后运维 | [资料](days/day9.md) | [PDF](/slides/week9-lecture1-incident-response.pdf) |
-| [第 10 章](days/day10.md) | AI 软件工程的未来 | [资料](days/day10.md) | - |
+| [第 1 章](days/chapter1.md) | 编程 LLM 和 AI 开发入门 | [资料](days/chapter1.md) | [Lecture 1](/slides/week1-lecture1-introduction.pdf) / [Lecture 2](/slides/week1-lecture2-power-prompting.pdf) |
+| [第 2 章](days/chapter2.md) | 编程智能体的架构 | [资料](days/chapter2.md) | [Lecture 1](/slides/week2-lecture1-coding-agent-scratch.pdf) / [Lecture 2](/slides/week2-lecture2-mcp-server.pdf) |
+| [第 3 章](days/chapter3.md) | AI 集成开发环境 | [资料](days/chapter3.md) | [Lecture 1](/slides/week3-lecture1-ide-setup.pdf) / [Lecture 2](/slides/week3-lecture2-cognition.pdf) |
+| [第 4 章](days/chapter4.md) | 编程智能体模式 | [资料](days/chapter4.md) | [Lecture 1](/slides/week4-lecture1-agent-manager.pdf) / [Lecture 2](/slides/week4-lecture2-claude-code.pdf) |
+| [第 5 章](days/chapter5.md) | 现代终端 | [资料](days/chapter5.md) | [PDF](/slides/week5-lecture1-ai-developer-product.pdf) |
+| [第 6 章](days/chapter6.md) | AI 测试与安全 | [资料](days/chapter6.md) | [PDF](/slides/week6-lecture1-ai-qa-sast-dast.pdf) |
+| [第 7 章](days/chapter7.md) | 现代软件支持 | [资料](days/chapter7.md) | [PDF](/slides/week7-lecture1-code-review.pdf) |
+| [第 8 章](days/chapter8.md) | 自动化 UI 和应用构建 | [资料](days/chapter8.md) | [Lecture 1](/slides/week8-lecture1-end-to-end-apps.pdf) / [Lecture 2](/slides/week8-lecture2-vercel.pdf) |
+| [第 9 章](days/chapter9.md) | Agent 部署后运维 | [资料](days/chapter9.md) | [PDF](/slides/week9-lecture1-incident-response.pdf) |
+| [第 10 章](days/chapter10.md) | AI 软件工程的未来 | [资料](days/chapter10.md) | - |
 
 ---
 

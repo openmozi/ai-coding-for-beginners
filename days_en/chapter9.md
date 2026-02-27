@@ -170,9 +170,8 @@ Practice AI-assisted incident response process.
 
 ---
 
-## Tomorrow's Preview
+## Next Chapter
 
-Day 10 will discuss the future of AI software engineering, exploring software development role evolution and industry trends.
+[Next Chapter: Chapter 10](./chapter10.md)
 
 ---
-

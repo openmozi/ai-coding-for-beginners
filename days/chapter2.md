@@ -182,15 +182,14 @@ MCP 提供 stdio 和 SSE 传输层
 
 ## 作业
 
-**[Day 2 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week2)**
+**[Chapter 2 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week2)**
 
 在 AI IDE 中完成开发任务。
 
 ---
 
-## 明天预告
+## 下一章
 
-Day 3 将深入探讨 AI IDE，学习上下文管理和代码理解的最佳实践。
+[下一章：Chapter 3](./chapter3.md)
 
 ---
-

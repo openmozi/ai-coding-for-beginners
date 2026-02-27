@@ -208,9 +208,8 @@ Use AI tools to build complete web applications.
 
 ---
 
-## Tomorrow's Preview
+## Next Chapter
 
-Day 9 will discuss agent deployment and operations, learning AI in DevOps and incident response.
+[Next Chapter: Chapter 9](./chapter9.md)
 
 ---
-

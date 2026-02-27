@@ -159,15 +159,14 @@ For each tool:
 
 ## Assignment
 
-**[Day 5 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week5)**
+**[Chapter 5 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week5)**
 
 Explore modern AI developer tools and compare different product design philosophies.
 
 ---
 
-## Tomorrow's Preview
+## Next Chapter
 
-Day 6 will dive into AI testing and security, learning SAST, DAST and other security testing methods.
+[Next Chapter: Chapter 6](./chapter6.md)
 
 ---
-

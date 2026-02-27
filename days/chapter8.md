@@ -208,9 +208,8 @@ Natural Language Input → AI Processing → Live Preview → One-Click Deploy
 
 ---
 
-## 明天预告
+## 下一章
 
-Day 9 将探讨 Agent 部署后的运维，学习 AI 在 DevOps 和事件响应中的应用。
+[下一章：Chapter 9](./chapter9.md)
 
 ---
-

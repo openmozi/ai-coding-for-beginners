@@ -182,15 +182,14 @@ Try building a simple Coding Agent from scratch:
 
 ## Assignment
 
-**[Day 2 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week2)**
+**[Chapter 2 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week2)**
 
 Complete development tasks in AI IDE.
 
 ---
 
-## Tomorrow's Preview
+## Next Chapter
 
-Day 3 will dive into AI IDE, learning context management and code understanding best practices.
+[Next Chapter: Chapter 3](./chapter3.md)
 
 ---
-

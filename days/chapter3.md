@@ -189,15 +189,14 @@ sync/async   sync       sync
 
 ## 作业
 
-**[Day 3 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week3)**
+**[Chapter 3 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week3)**
 
 熟悉 AI IDE 环境，掌握最佳实践。
 
 ---
 
-## 明天预告
+## 下一章
 
-Day 4 将深入探讨 Agent 管理技巧，学习如何高效管理多个 AI 代理。
+[下一章：Chapter 4](./chapter4.md)
 
 ---
-

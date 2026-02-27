@@ -196,16 +196,16 @@ Here are the logs:
 
 | 天数 | 主题 |
 |------|------|
-| Day 1 | LLM 基础 + 提示工程 |
-| Day 2 | Coding Agent + MCP |
-| Day 3 | AI IDE + 同步/异步 |
-| Day 4 | Agent 管理 + Claude Code |
-| Day 5 | AI 开发产品设计 |
-| Day 6 | 测试与安全 |
-| Day 7 | Code Review |
-| Day 8 | AI 应用构建 |
-| Day 9 | AI DevOps |
-| Day 10 | 未来展望 |
+| Chapter 1 | LLM 基础 + 提示工程 |
+| Chapter 2 | Coding Agent + MCP |
+| Chapter 3 | AI IDE + 同步/异步 |
+| Chapter 4 | Agent 管理 + Claude Code |
+| Chapter 5 | AI 开发产品设计 |
+| Chapter 6 | 测试与安全 |
+| Chapter 7 | Code Review |
+| Chapter 8 | AI 应用构建 |
+| Chapter 9 | AI DevOps |
+| Chapter 10 | 未来展望 |
 
 ---
 
@@ -234,7 +234,7 @@ Here are the logs:
 ## 作业
 
 ### LLM Prompting Playground
-**[Day 1 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week1)**
+**[Chapter 1 Assignment](https://github.com/mihail911/modern-software-dev-assignments/tree/master/week1)**
 
 通过实践掌握 LLM 提示技巧。
 
@@ -255,9 +255,8 @@ Here are the logs:
 
 ---
 
-## 明天预告
+## 下一章
 
-Day 2 将深入探讨编程智能体（Coding Agents）的架构，学习如何构建自己的编码代理。
+[下一章：Chapter 2](./chapter2.md)
 
 ---
-
