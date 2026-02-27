@@ -1,4 +1,4 @@
-# Modern AI Software Development Tutorial
+# The Modern Software Developer
 
 > Based on Stanford University CS146S: The Modern Software Developer
 
