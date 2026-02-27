@@ -1,4 +1,4 @@
-# 现代 AI 软件开发教程
+# The Modern Software Developer
 
 > 基于 Stanford University CS146S: The Modern Software Developer
 
