@@ -1,5 +1,4 @@
-# Day 10: What's Next for AI Software Engineering
-# 第十天：AI 软件工程的未来
+# 第 10 章：AI 软件工程的未来
 
 ## 学习目标
 

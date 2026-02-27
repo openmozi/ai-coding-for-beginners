@@ -1,5 +1,4 @@
-# Day 4: Agent Management and Claude Code
-# 第四天：编程智能体模式
+# 第 4 章：编程智能体模式
 
 ## 课程概述
 

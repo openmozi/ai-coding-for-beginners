@@ -1,4 +1,4 @@
-# Day 9: Agents Post-Deployment - AI DevOps
+# Chapter 9: Agents Post-Deployment - AI DevOps
 
 ## Course Overview
 
@@ -75,7 +75,7 @@ Coding accounts for only 30% of engineering time. The harder 70% is running code
 ## Lecture Materials
 
 ### Lecture 17: Incident response and DevOps
-- [Slides (PDF)](slides/week9-lecture1-incident-response.pdf)
+- [Slides (PDF)](../slides/week9-lecture1-incident-response.pdf)
 
 ### Lecture 18: Guest Speaker - Resolve AI
 

@@ -1,4 +1,4 @@
-# Day 1: Introduction to Coding LLMs and AI Development
+# Chapter 1: Introduction to Coding LLMs and AI Development
 
 ## Course Overview
 
@@ -158,11 +158,11 @@ Try different role prompts and compare outputs:
 ## Lecture Materials
 
 ### Lecture 1: Introduction and How LLMs are Made
-- [Slides (PDF)](slides/week1-lecture1-introduction.pdf)
+- [Slides (PDF)](../slides/week1-lecture1-introduction.pdf)
 - **Instructor**: Mihail Eric
 
-### Lecture 2: Power Prompting for LLMs  
-- [Slides (PDF)](slides/week1-lecture2-power-prompting.pdf)
+### Lecture 2: Power Prompting for LLMs
+- [Slides (PDF)](../slides/week1-lecture2-power-prompting.pdf)
 
 ---
 

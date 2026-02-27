@@ -1,4 +1,4 @@
-# Day 3: AI IDE and Context Management
+# Chapter 3: AI IDE and Context Management
 
 ## Course Overview
 
@@ -91,6 +91,16 @@ sync/async   sync       sync
 | **Definitions** | Special cases to consider? |
 | **Out-of-scope** | What should NOT be changed? |
 | **Test cases** | How to test? |
+| **Plan** | High-level implementation breakdown |
+
+### Optimizing Codebase
+
+> "Optimize your codebase so that a human and an agent could understand what's going on"
+
+- **Descriptive**: Repo direction, file structure
+- **Runnable**: Setup and environment
+- **Consistent**: Best practices, code style
+- **Accessible**: Access patterns, APIs and contracts
 
 ### Navigation Files
 
@@ -102,14 +112,30 @@ sync/async   sync       sync
 
 ---
 
+## 5. Practice Exercises
+
+### Exercise 1: Configure CLAUDE.md
+Create a CLAUDE.md file containing:
+- Project overview
+- Common commands
+- Code style guidelines
+- Testing instructions
+
+### Exercise 2: Try Sync/Async Tools
+1. Use Windsurf for sync coding
+2. Use Devin for async tasks
+3. Compare the experience
+
+---
+
 ## Lecture Materials
 
 ### Lecture 5: The AI IDE: Fundamentals to Power User
-- [Slides (PDF)](slides/week3-lecture1-ide-setup.pdf)
+- [Slides (PDF)](../slides/week3-lecture1-ide-setup.pdf)
 - **Guest Speaker**: Silas Alberti, Cognition
 
 ### Lecture 6: IDEs Love Agents
-- [Slides (PDF)](slides/week3-lecture2-cognition.pdf)
+- [Slides (PDF)](../slides/week3-lecture2-cognition.pdf)
 
 ---
 

@@ -1,4 +1,4 @@
-# Day 6: AI Testing and Security
+# Chapter 6: AI Testing and Security
 
 ## Course Overview
 
@@ -71,7 +71,7 @@ When LLMs write most of your code, you need extensive guardrails. Software quali
 ## Lecture Materials
 
 ### Lecture 11: AI Testing and Security
-- [Slides (PDF)](slides/week6-lecture1-ai-qa-sast-dast.pdf)
+- [Slides (PDF)](../slides/week6-lecture1-ai-qa-sast-dast.pdf)
 - **Guest Speaker**: Isaac Evans, CEO of Semgrep
 
 ---

@@ -1,5 +1,4 @@
-# Day 2: The Anatomy of Coding Agents
-# 第二天：编程智能体的架构
+# 第 2 章：编程智能体的架构
 
 ## 课程概述
 

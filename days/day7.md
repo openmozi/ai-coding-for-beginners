@@ -1,5 +1,4 @@
-# Day 7: Modern Software Support - AI Code Review
-# 第七天：现代软件支持
+# 第 7 章：现代软件支持
 
 ## 课程概述
 

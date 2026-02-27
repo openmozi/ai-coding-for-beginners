@@ -1,5 +1,4 @@
-# Day 9: Agents Post-Deployment - AI DevOps
-# 第九天：Agent 部署后运维
+# 第 9 章：Agent 部署后运维
 
 ## 课程概述
 

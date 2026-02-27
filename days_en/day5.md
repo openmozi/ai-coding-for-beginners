@@ -1,4 +1,4 @@
-# Day 5: Modern Terminal and AI Developer Products
+# Chapter 5: Modern Terminal and AI Developer Products
 
 ## Course Overview
 
@@ -52,7 +52,7 @@ Fastest developer tool adoption in history. UX/UI evolving rapidly to leverage a
 ## Lecture Materials
 
 ### Lecture 9: Building a breakout AI developer product
-- [Slides (PDF)](slides/week5-lecture1-ai-developer-product.pdf)
+- [Slides (PDF)](../slides/week5-lecture1-ai-developer-product.pdf)
 - **Guest Speaker**: Zach Lloyd, CEO of Warp
 
 ---

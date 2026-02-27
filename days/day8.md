@@ -1,5 +1,4 @@
-# Day 8: Automated UI and App Building
-# 第八天：自动化 UI 和应用构建
+# 第 8 章：自动化 UI 和应用构建
 
 ## 课程概述
 

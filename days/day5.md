@@ -1,5 +1,4 @@
-# Day 5: Modern Terminal and AI Developer Products
-# 第五天：现代终端与 AI 开发产品
+# 第 5 章：现代终端与 AI 开发产品
 
 ## 课程概述
 

@@ -1,4 +1,4 @@
-# Day 7: Modern Software Support - AI Code Review
+# Chapter 7: Modern Software Support - AI Code Review
 
 ## Course Overview
 
@@ -69,7 +69,7 @@ Code Review is the highest leverage activity. AI Code Review is more important t
 ## Lecture Materials
 
 ### Lecture 13: AI Code Review
-- [Slides (PDF)](slides/week7-lecture1-code-review.pdf)
+- [Slides (PDF)](../slides/week7-lecture1-code-review.pdf)
 - **Guest Speaker**: Tomas Reimers, CPO of Graphite
 
 ---

@@ -1,4 +1,4 @@
-# Day 4: Agent Management and Claude Code
+# Chapter 4: Agent Management and Claude Code
 
 ## Course Overview
 
@@ -104,18 +104,18 @@ npm install -g @anthropic-ai/claude-code
 ## Lecture Materials
 
 ### Lecture 7: How to be an Agent Manager
-- [Slides (PDF)](slides/week4-lecture1-agent-manager.pdf)
+- [Slides (PDF)](../slides/week4-lecture1-agent-manager.pdf)
 - **Guest Speaker**: Boris Cherny, Anthropic
 
 ### Lecture 8: Welcome to Claude Code
-- [Slides (PDF)](slides/week4-lecture2-claude-code.pdf)
+- [Slides (PDF)](../slides/week4-lecture2-claude-code.pdf)
 
 ---
 
 ## Reading Materials
 
 1. **[Claude Code Official Docs](https://docs.anthropic.com/en/docs/claude-code)**
-2. **[How Anthropic Uses Claude Code](readings/how-anthropic-uses-claude-code.pdf)**
+2. **[How Anthropic Uses Claude Code](../readings/how-anthropic-uses-claude-code.pdf)**
 
 ---
 

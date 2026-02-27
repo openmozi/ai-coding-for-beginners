@@ -1,4 +1,4 @@
-# Day 8: Automated UI and App Building
+# Chapter 8: Automated UI and App Building
 
 ## Course Overview
 
@@ -67,10 +67,10 @@ Natural Language → AI Processing → Live Preview → Deploy
 ## Lecture Materials
 
 ### Lecture 15: Automated UI and App Building
-- [Slides (PDF)](slides/week8-lecture1-end-to-end-apps.pdf)
+- [Slides (PDF)](../slides/week8-lecture1-end-to-end-apps.pdf)
 
 ### Lecture 16: Guest Speaker - Gaspar Garcia (Vercel)
-- [Slides (PDF)](slides/week8-lecture2-vercel.pdf)
+- [Slides (PDF)](../slides/week8-lecture2-vercel.pdf)
 
 ---
 

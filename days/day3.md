@@ -1,5 +1,4 @@
-# Day 3: AI IDE and Context Management
-# 第三天：AI 集成开发环境
+# 第 3 章：AI 集成开发环境
 
 ## 课程概述
 

@@ -1,5 +1,4 @@
-# Day 1: Introduction to Coding LLMs and AI Development
-# 第一天：编程 LLM 和 AI 开发入门
+# 第 1 章：编程 LLM 和 AI 开发入门
 
 ## 课程概述
 

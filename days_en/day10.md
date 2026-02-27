@@ -1,4 +1,4 @@
-# Day 10: What's Next for AI Software Engineering
+# Chapter 10: What's Next for AI Software Engineering
 
 ## Course Overview
 

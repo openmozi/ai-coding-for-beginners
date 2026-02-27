@@ -1,5 +1,4 @@
-# Day 6: AI Testing and Security
-# 第六天：AI 测试与安全
+# 第 6 章：AI 测试与安全
 
 ## 课程概述
 

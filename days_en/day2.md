@@ -1,4 +1,4 @@
-# Day 2: The Anatomy of Coding Agents
+# Chapter 2: The Anatomy of Coding Agents
 
 ## Course Overview
 
@@ -101,13 +101,29 @@ Agent = LLM + Tools + Loop
 
 ---
 
+## 4. Practice Exercises
+
+### Exercise 1: Understand Agent Loop
+Observe in Claude or Cursor how Agent:
+1. Receives user request
+2. Decides which tools to use
+3. Executes tools and processes results
+4. Continues until task completion
+
+### Exercise 2: Explore MCP
+1. View available MCPs in Cursor or Claude Desktop
+2. Try adding a new MCP Server
+3. Observe how tools are described to LLM
+
+---
+
 ## Lecture Materials
 
 ### Lecture 3: Building a coding agent from scratch
-- [Slides (PDF)](slides/week2-lecture1-coding-agent-scratch.pdf)
+- [Slides (PDF)](../slides/week2-lecture1-coding-agent-scratch.pdf)
 
 ### Lecture 4: Building a custom MCP server
-- [Slides (PDF)](slides/week2-lecture2-mcp-server.pdf)
+- [Slides (PDF)](../slides/week2-lecture2-mcp-server.pdf)
 
 ---
 
