@@ -16,7 +16,7 @@
 
 > "You won't be replaced by AI. You'll be replaced by a competent engineer who knows how to use AI."
 
-AI 编程是未来软件工程师的核心技能。不会 AI 的工程师将被会 AI 的工程师替代。但这**不是"vibe coding"**课程——不能盲目相信 AI 输出，Human-agent engineering 才是核心。
+AI 编程是未来软件工程师的核心技能。不会 AI 的工程师将被会 AI 的工程师替代。但这**不是** "vibe coding"课程——不能盲目相信 AI 输出，Human-agent engineering 才是核心。
 
 ### Human-agent Engineering 核心技能
 1. **阅读和审查大量代码** - 学会辨别好代码和坏代码

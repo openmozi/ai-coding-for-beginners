@@ -16,7 +16,7 @@ In the age of large language models, software development is undergoing a revolu
 
 > "You won't be replaced by AI. You'll be replaced by a competent engineer who knows how to use AI."
 
-AI programming is the core skill for future software engineers. Engineers who don't know AI will be replaced by engineers who do. But this is **NOT a "vibe coding"** course—don't blindly trust AI output. Human-agent engineering is the core.
+AI programming is the core skill for future software engineers. Engineers who don't know AI will be replaced by engineers who do. But this is **NOT** a "vibe coding" course—don't blindly trust AI output. Human-agent engineering is the core.
 
 > Prompts are the lingua franca for getting LLMs to do what we want and also effectively programming them
 >
