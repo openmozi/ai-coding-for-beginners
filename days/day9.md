@@ -93,7 +93,7 @@ Coding 只占工程时间的 30%，更难的 70% 是运行代码。
 ## 讲座资料
 
 ### Lecture 17: Incident response and DevOps
-- [Slides (PDF)](slides/week9-lecture1-incident-response.pdf)
+- [Slides (PDF)](../slides/week9-lecture1-incident-response.pdf)
 
 ### Lecture 18: Guest Speaker - Resolve AI
 - **Guest Speaker**: Mayank Agarwal (CTO), Milind Ganjoo

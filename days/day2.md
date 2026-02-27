@@ -134,10 +134,10 @@ Agent = LLM + 工具 + 循环
 ## 讲座资料
 
 ### Lecture 3: Building a coding agent from scratch
-- [Slides (PDF)](slides/week2-lecture1-coding-agent-scratch.pdf)
+- [Slides (PDF)](../slides/week2-lecture1-coding-agent-scratch.pdf)
 
 ### Lecture 4: Building a custom MCP server
-- [Slides (PDF)](slides/week2-lecture2-mcp-server.pdf)
+- [Slides (PDF)](../slides/week2-lecture2-mcp-server.pdf)
 
 ---
 

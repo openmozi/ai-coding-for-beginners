@@ -137,11 +137,11 @@ sync/async   sync       sync
 ## 讲座资料
 
 ### Lecture 5: The AI IDE: Fundamentals to Power User
-- [Slides (PDF)](slides/week3-lecture1-ide-setup.pdf)
+- [Slides (PDF)](../slides/week3-lecture1-ide-setup.pdf)
 - **Guest Speaker**: Silas Alberti, Cognition
 
 ### Lecture 6: IDEs Love Agents
-- [Slides (PDF)](slides/week3-lecture2-cognition.pdf)
+- [Slides (PDF)](../slides/week3-lecture2-cognition.pdf)
 
 ---
 

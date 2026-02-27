@@ -87,7 +87,7 @@ Code Review 是最高杠杆的活动。AI Code Review 比以往任何时候都�
 ## 讲座资料
 
 ### Lecture 13: AI Code Review
-- [Slides (PDF)](slides/week7-lecture1-code-review.pdf)
+- [Slides (PDF)](../slides/week7-lecture1-code-review.pdf)
 - **Guest Speaker**: Tomas Reimers, CPO of Graphite
 
 ---

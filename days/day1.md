@@ -165,11 +165,11 @@ and the stack trace:
 ## 讲座资料
 
 ### Lecture 1: Introduction and How LLMs are Made
-- [Slides (PDF)](slides/week1-lecture1-introduction.pdf)
+- [Slides (PDF)](../slides/week1-lecture1-introduction.pdf)
 - **讲师**: Mihail Eric
 
 ### Lecture 2: Power Prompting for LLMs  
-- [Slides (PDF)](slides/week1-lecture2-power-prompting.pdf)
+- [Slides (PDF)](../slides/week1-lecture2-power-prompting.pdf)
 
 ---
 

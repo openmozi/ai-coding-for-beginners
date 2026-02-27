@@ -138,11 +138,11 @@ claude mcp add barley_server -- node myserver
 ## 讲座资料
 
 ### Lecture 7: How to be an Agent Manager
-- [Slides (PDF)](slides/week4-lecture1-agent-manager.pdf)
+- [Slides (PDF)](../slides/week4-lecture1-agent-manager.pdf)
 - **Guest Speaker**: Boris Cherny, Anthropic
 
 ### Lecture 8: Welcome to Claude Code
-- [Slides (PDF)](slides/week4-lecture2-claude-code.pdf)
+- [Slides (PDF)](../slides/week4-lecture2-claude-code.pdf)
 
 ---
 
@@ -150,7 +150,7 @@ claude mcp add barley_server -- node myserver
 
 ### 必读
 1. **[Claude Code 官方文档](https://docs.anthropic.com/en/docs/claude-code)**
-2. **[How Anthropic Uses Claude Code (PDF)](readings/how-anthropic-uses-claude-code.pdf)**
+2. **[How Anthropic Uses Claude Code (PDF)](../readings/how-anthropic-uses-claude-code.pdf)**
 
 ---
 

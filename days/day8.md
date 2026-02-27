@@ -94,10 +94,10 @@ Natural Language Input → AI Processing → Live Preview → One-Click Deploy
 ## 讲座资料
 
 ### Lecture 15: Automated UI and App Building
-- [Slides (PDF)](slides/week8-lecture1-end-to-end-apps.pdf)
+- [Slides (PDF)](../slides/week8-lecture1-end-to-end-apps.pdf)
 
 ### Lecture 16: Guest Speaker - Gaspar Garcia (Vercel)
-- [Slides (PDF)](slides/week8-lecture2-vercel.pdf)
+- [Slides (PDF)](../slides/week8-lecture2-vercel.pdf)
 - **核心**: v0 架构、AI 开发者体验
 
 ---

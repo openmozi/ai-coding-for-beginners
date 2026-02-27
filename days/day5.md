@@ -87,7 +87,7 @@ Agent 工作流
 ## 讲座资料
 
 ### Lecture 9: Building a breakout AI developer product
-- [Slides (PDF)](slides/week5-lecture1-ai-developer-product.pdf)
+- [Slides (PDF)](../slides/week5-lecture1-ai-developer-product.pdf)
 - **Guest Speaker**: Zach Lloyd, CEO of Warp
 
 ---
