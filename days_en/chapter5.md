@@ -13,34 +13,31 @@ The fastest developer tool adoption in history, with UX/UI evolving rapidly to l
 
 ---
 
-## 1. Developer Tools Evolution History
+## 1. Why Focus on AI Developer Products
 
-| Year | Milestone |
-|------|-----------|
-| 1980 | Turbo Pascal released, first true IDE |
-| 1983 | Microsoft Visual Studio released |
-| 1997 | IntelliJ IDEA released |
-| 2001 | VSCode released |
-| 2023 | Cursor released, first widely used AI native IDE |
-| 2025 | AI Agent era |
+### Why?
+- We're seeing some of the fastest adoption of new dev tools in history
+- The UX/UI for developer tools are changing rapidly to best leverage agentic autonomy
+
+### Core Question
+> What does having agents in your developer environment change about the product you are using?
 
 ---
 
-## 2. 7 Principles of AI Developer Products
+## 2. 7 Principles of Modern AI Dev Tools
 
 ### Principle 1: Start with what developers know
-Start from what developers already know
 
-- Encourage transition from existing interfaces: IDE → Cursor, Terminal → Warp
+- Encourage transition from existing interfaces
+  - Everyone uses an IDE → Cursor
+  - Terminal is well-understood UX → Warp
+  - People know chat → Bolt
 - Easily switch between code and natural language
-- Everyone uses IDE (Cursor)
-- Terminal is well-understood UX (Warp)
-- People know chat (Bolt)
 
 ### Principle 2: Configuration flexibility
 
-- **Zero setup**: Immediately demonstrate value
-- **Seamless model switching**: Switch between models easily
+- **Zero setup required** to demonstrate value for average user
+- **Swap between models seamlessly**
 - **Tremendous configurability for power user**:
   - Prompts
   - Project rules
@@ -48,13 +45,15 @@ Start from what developers already know
 
 ### Principle 3: Focus on developer ergonomics
 
-- **If you can shave off a single keystroke, do it** - Keyboard hotkeys
-- **Zero onboarding friction** - "5 minutes to WOW"
+- **If you can shave off a single keystroke, do it**
+  - Keyboard hotkeys
+- **Zero onboarding friction**
+  - "5 minutes to WOW"
 
 ### Principle 4: Chat as a first-class citizen
 
 - Code is inherently a contrived representation of human intent
-- Tools evolve toward simply communicating developer intent
+- As tools evolve, more of them will involve just speaking in natural language
 - Progress toward simply communicating developer intent rather than syntax
 
 ### Principle 5: MCP Integration
@@ -66,16 +65,16 @@ Start from what developers already know
 
 - Allow iterating on changes and seeing updates quickly
 - Panels and dashboards that change in near real-time based on prompts
+- This is why entire projects are committed to just reducing build time
 - **Explainability is first-class citizen**
-- This is why entire projects are committed to reducing build time
 
 ### Principle 7: Agent Workflows
 
-- **Full autonomy** for substantive tasks
+- Full autonomy for substantive tasks
 - Increasing adoption of an "agent-take-the-wheel" approach
 - Varied levels of human-in-the-loop involvement:
   - Agent asks clarifying questions
-  - YOLO (fully autonomous)
+  - YOLO
 
 ---
 
@@ -90,31 +89,20 @@ Start from what developers already know
 | Testing & QA | Automated test generation and visual regression systems |
 | DevOps Automation | AI-driven deployment, monitoring, and incident response |
 
-### v0 Deep Dive
-
-> "From Idea to Production in Minutes"
-
-**Core Features**:
-- Natural language input → AI processing → Live preview → One-click deploy
-
-**Target Users**:
-- Product Managers: Validate concepts quickly without waiting for engineering
-- Designers: Bridge gap between design tools and production code
-- Engineers: Focus on complex logic, AI handles boilerplate
-- Founders: Build and launch MVPs without large engineering teams
-
 ---
 
 ## 4. Open Questions
 
-| Questions |
-|-----------|
-| Consolidation or specialization? Will we see massive consolidation from point solutions to all-in-one platform? |
+| Question |
+|----------|
+| Will we see massive consolidation from point solutions (for code review, app building, monitoring) into a single all-in-one platform? |
 | Will AI IDEs just evolve into AI terminals into AI browser REPLs? |
-| Will tools like Warp/Cursor become more verticalized, specializing for full stack development? |
-| What universal standard will emerge for personalizing coding agents? |
-| We won't be in a fragmented .cursorrules / CLAUDE.md / etc world for long |
-| AGENTS.md is a first step in that direction |
+| Will tools like Warp/Cursor become more verticalized, specializing their offering for tasks like full stack development? |
+| What universal standard will emerge for personalizing your coding agents and giving them project-specific rules? |
+
+**On Standardization:**
+- We won't be in a fragmented .cursorrules / CLAUDE.md / etc world for long
+- AGENTS.md is a first step in that direction
 
 ---
 
