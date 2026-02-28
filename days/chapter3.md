@@ -53,9 +53,9 @@ AI IDE 本质是增强而非替代。上下文质量决定输出质量。
 | 年份 | 里程碑 |
 |------|--------|
 | 1980 | Turbo Pascal 发布，第一个真正的 IDE |
-| 1983 | Microsoft Visual Studio 发布 |
-| 1997 | IntelliJ IDEA 发布，先进的上下文代码导航、重构、代码补全 |
-| 2001 | Microsoft VSCode 发布，轻量级编辑器，高度可扩展生态 |
+| 1997 | Microsoft Visual Studio 发布 |
+| 2001 | IntelliJ IDEA 发布，先进的上下文代码导航、重构、代码补全 |
+| 2015 | Microsoft VSCode 发布，轻量级编辑器，高度可扩展生态 |
 | 2023 | Cursor 发布，首批广泛使用的 AI 原生 IDE |
 | 2030 | 未来展望 |
 
