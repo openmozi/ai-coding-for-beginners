@@ -53,9 +53,9 @@ AI IDE is fundamentally about augmentation, not replacement. Context quality det
 | Year | Milestone |
 |------|-----------|
 | 1980 | Turbo Pascal released, first true IDE |
-| 1983 | Microsoft Visual Studio released |
-| 1997 | IntelliJ IDEA released with advanced contextual code navigation, refactoring, code completion |
-| 2001 | VSCode released - lightweight editor with highly extensible ecosystem |
+| 1997 | Microsoft Visual Studio released |
+| 2001 | IntelliJ IDEA released with advanced contextual code navigation, refactoring, code completion |
+| 2015 | VSCode released - lightweight editor with highly extensible ecosystem |
 | 2023 | Cursor released, one of first widely used AI native IDEs |
 | 2030 | Future outlook |
 
