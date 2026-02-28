@@ -17,14 +17,17 @@ AI makes app building more democratized, significantly lowering the barrier to f
 ## 1. Web Development Evolution
 
 ### Old Tech Stack
-- LAMP (Linux, Apache, MySQL, PHP)
-- MERN (MongoDB, Express, React, Node)
-- JAM (JavaScript, APIs, Markup)
-- Serverless
 
-### Architecture Diagram
+| Stack | Description |
+|-------|-------------|
+| LAMP | Linux, Apache, MySQL, PHP |
+| MERN | MongoDB, Express, React, Node |
+| JAM | JavaScript, APIs, Markup |
+| Serverless | Serverless architecture |
+
+### Traditional Architecture
 ```
-Client → Server → Database
+Client-side → Server-side → Database
 ```
 
 ### First Generation Low-code/No-code
@@ -32,7 +35,7 @@ Client → Server → Database
 - For non-technical users, limited customization
 
 ### New AI Era
-- Lovable, Replit, v0, Base44, Cursor
+- **Lovable, Replit, v0, Base44, Cursor**
 - Generate complete apps from natural language
 - More user-friendly than first generation no-code platforms
 
@@ -47,6 +50,7 @@ Client → Server → Database
 ### Anyone Can Build Apps
 - Generate complete apps from natural language
 - "Prompt your way to a fully fledged app"
+- More user-friendly than 1st generation no-code platforms
 
 ---
 
@@ -55,7 +59,7 @@ Client → Server → Database
 ### Core Technology
 - **WebContainer** - Run Node.js in browser
 
-### App Builder System Prompt
+### System Prompt
 - System prompt guides app generation
 
 ---
@@ -70,35 +74,74 @@ Client → Server → Database
 Natural Language Input → AI Processing → Live Preview → One-Click Deploy
 ```
 
-### Target Users
+- Describe your UI vision in plain English
+- Advanced models generate production-ready code
+- Instantly see and iterate on your interface
+- Push to production without friction
 
-| User Type | Value |
-|-----------|-------|
-| **Product Managers** | Validate concepts quickly without waiting for engineering, transform PRDs into interactive prototypes |
-| **Designers** | Bridge gap between design tools and production code, see vision implemented instantly |
-| **Engineers** | Focus on complex logic, AI handles boilerplate, accelerate feature delivery |
-| **Founders** | Build and launch MVPs without large engineering teams, iterate based on user feedback |
+### Design Philosophy
 
-### v0 Internal Architecture
+> "Fail fast, fail often"
 
-1. **Intent Understanding** - Natural language processing extracts structured requirements
-   - Identify components, layouts, interactions, data flows
+- Accelerate the learning moments of product development
+- Rapid iteration, rapid validation
 
-2. **Context Assembly** - Gather design system tokens, user preferences
+### The Developer Landscape is Shifting
 
-3. **Component Generation** - Generate production-ready code
+v0's rapid adoption demonstrates a fundamental change in how teams approach frontend development. The platform has resonated across company sizes—from startups moving at breakneck speed to enterprises modernizing legacy systems.
 
-4. **Stream Manipulation** - Real-time processing of incomplete responses
-   - Listen to and capture LLM output stream
+This isn't just about speed; it's about **democratizing technical capability** and enabling new forms of collaboration between engineering, design, and product teams.
 
-5. **Training + Fine-tuning** - Continuously improve code quality
-   - Use when prompt adjustment isn't enough
+### Breaking Down Silos
 
-### v0 Architecture Details
+AI-Powered Development Across All Personas:
 
-- Model knowledge can become outdated quickly
-- Frontier model labs won't create custom pipelines just for Next.js 16 web applications
-- Use stream manipulation and fine-tuning to solve problems
+| Role | Value |
+|------|-------|
+| **Product Managers** | Validate concepts quickly without waiting for engineering cycles. Transform PRDs into interactive prototypes for stakeholder review |
+| **Designers** | Bridge the gap between design tools and production code. See your vision implemented instantly with full responsiveness |
+| **Engineers** | Focus on complex logic while AI handles boilerplate. Accelerate feature delivery and maintain quality standards |
+| **Founders** | Build and launch MVPs without large engineering teams. Iterate based on user feedback in real-time |
+
+### Inside v0's Engine: How Real-World Agent Systems Work
+
+1. **Intent Understanding**
+   - Natural language processing extracts structured requirements from conversational input
+   - Identify components, layouts, interactions, and data flows
+
+2. **Context Assembly**
+   - Gather design system tokens
+   - Existing components, API schemas
+   - Accessibility requirements
+
+3. **Code Generation**
+   - Large language models generate production-quality React components
+   - Proper TypeScript types
+   - Responsive design and best practices
+
+4. **Validation & Testing**
+   - Automated checks ensure accessibility compliance
+   - Responsive behavior
+   - Code quality before presenting to user
+
+5. **Human-in-the-Loop**
+   - Engineers review, refine
+   - Provide feedback that trains the model for future generations
+
+### Key Technical Challenges
+
+**Problems:**
+- Model knowledge can quickly become outdated for topics that change fast
+- Frontier model labs won't create custom pipelines just for emitting proper code for Next.js 16 web applications
+
+**Solutions:**
+
+1. **Stream Manipulation**
+   - Created a subsystem that lets us listen to and capture the LLM's output stream before it reaches the user
+   - Sometimes, just adjusting the prompt isn't enough
+
+2. **Training + Fine-tuning**
+   - Continuously improve code quality
 
 ### Free for Students
 - https://v0.app/students
@@ -109,10 +152,10 @@ Natural Language Input → AI Processing → Live Preview → One-Click Deploy
 
 | Limitation | Description |
 |------------|-------------|
-| Everything works great when it works | Once problems arise, you're back at square one |
-| Prompts are just suggestions | Not every user understands this |
-| Security issues | Security vulnerabilities have existed in the past |
-| Homogenization | How to prevent all apps from looking the same? |
+| Everything is awesome when it works | But once things break we're back at square 1 |
+| Prompts are just suggestions | Not every user understands that |
+| Security has been an issue | Security vulnerabilities have existed in the past |
+| Homogenization | How do we prevent all these apps from looking the same? |
 | Complexity | How complex can these apps realistically get? |
 
 ---
@@ -126,16 +169,21 @@ Natural Language Input → AI Processing → Live Preview → One-Click Deploy
 ### But they're still probabilistic systems
 
 ### Give them frameworks
+- Corrections and Fine-Tuning
 
 ---
 
 ## 7. AI Developer Tool Landscape
 
+### A Cambrian Explosion of AI Dev Tools
+
+v0 exists within an ecosystem of specialized AI development tools, each targeting different aspects of the software lifecycle. From code completion to testing, deployment to monitoring—AI is transforming every stage.
+
 ### Types
 
 | Type | Description |
 |------|-------------|
-| Code Assistants | Vercel Agent, GitHub Copilot, Cursor |
+| Code Assistants | Vercel Agent, GitHub Copilot, Cursor - real-time code suggestions |
 | Frontend Builders | Visual development platforms |
 | Testing & QA | Automated test generation and visual regression systems |
 | DevOps Automation | AI-driven deployment, monitoring, and incident response |
@@ -157,14 +205,25 @@ Natural Language Input → AI Processing → Live Preview → One-Click Deploy
 - Large organizations use v0 to prototype internal tools
 - Customer-facing features before committing engineering resources
 - 5x more concepts per sprint
+- Reduced development waste
 
 ### Agency Efficiency
 - Design agencies deliver interactive prototypes to clients within hours of kickoff meetings
 - Accelerate feedback loop
+- Higher client satisfaction
 
 ---
 
-## 9. Practice Exercises
+## 9. The Road Ahead
+
+### What's Next for AI-Driven Development?
+- Tools will continue to evolve
+- More end-to-end workflow automation
+- New forms of collaboration between teams
+
+---
+
+## 10. Practice Exercises
 
 ### Exercise 1: Use v0 or Lovable
 1. Describe a simple web app in natural language
@@ -184,6 +243,7 @@ Learn one-click deployment features
 
 ### Lecture 15: Automated UI and App Building
 - [Slides (PDF)](../slides/week8-lecture1-end-to-end-apps.pdf)
+- **Core**: Web dev evolution, AI app building, limitations
 
 ### Lecture 16: Guest Speaker - Gaspar Garcia (Vercel)
 - [Slides (PDF)](../slides/week8-lecture2-vercel.pdf)
@@ -197,6 +257,7 @@ Learn one-click deployment features
 
 1. **[v0 by Vercel](https://v0.dev)**
 2. **[AI SDK Agents](https://ai-sdk.dev/docs/agents/overview)**
+3. **[v0 Composite Model Family](https://vercel.com/blog/v0-composite-model-family)**
 
 ---
 
