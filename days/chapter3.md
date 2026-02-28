@@ -30,7 +30,7 @@ AI IDE 本质是增强而非替代。上下文质量决定输出质量。
 
 ## 2. AI IDE 工作原理
 
-### Tab Complete（标签补全）
+### Tab Complete（补全）
 1. 当前代码周围的小上下文窗口被加密
 2. 服务器接收并进行 infilling LLM 推理
 3. 建议返回并显示
