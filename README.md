@@ -2,7 +2,7 @@
 
 > 基于 Stanford University CS146S: The Modern Software Developer
 
-**[English Version](README_EN.md)** | [学习检查清单](CHECKLIST.md) | [资源汇总](resources/README.md)
+**[English Version](README_EN.md)** | **[日本語版](README_JA.md)** | [学习检查清单](CHECKLIST.md) | [资源汇总](resources/README.md)
 
 ---
 
